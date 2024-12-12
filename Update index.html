@@ -52,6 +52,49 @@
             border: 2px solid #ff0000;
             border-radius: 8px;
         }
+        .download-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #ff0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        /* Blog Styles */
+        .blog-post {
+            background: #222;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .blog-post h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .blog-post p {
+            font-size: 1.2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            section {
+                padding: 3rem 1rem;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            section {
+                padding: 2rem 0.5rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -63,9 +106,22 @@
 <section id="gallery">
     <h2>Gallery</h2>
     <div class="grid">
-        <div class="item"><img src="https://via.placeholder.com/400" alt="Photo 1"></div>
-        <div class="item"><img src="https://via.placeholder.com/400" alt="Photo 2"></div>
-        <div class="item"><video src="https://youtu.be/4yVhdr7-6LQ" controls></video></div>
+        <div class="item">
+            <img src="https://raw.githubusercontent.com/13-leaving-song/Leaving-Memories/refs/heads/main/IMG_20241210_135608_883.jpg" alt="Image 1">
+            <a href="https://raw.githubusercontent.com/13-leaving-song/Leaving-Memories/refs/heads/main/IMG_20241210_135608_883.jpg" download class="download-link">Download Image 1</a>
+        </div>
+        <div class="item">
+            <img src="https://raw.githubusercontent.com/13-leaving-song/Leaving-Memories/refs/heads/main/IMG_20241210_140148_603.jpg" alt="Image 2">
+            <a href="https://raw.githubusercontent.com/13-leaving-song/Leaving-Memories/refs/heads/main/IMG_20241210_140148_603.jpg" download class="download-link">Download Image 2</a>
+        </div>
+        <div class="item">
+            <img src="https://raw.githubusercontent.com/13-leaving-song/Leaving-Memories/refs/heads/main/IMG_20241210_140206_967.jpg" alt="Image 3">
+            <a href="https://raw.githubusercontent.com/13-leaving-song/Leaving-Memories/refs/heads/main/IMG_20241210_140206_967.jpg" download class="download-link">Download Image 3</a>
+        </div>
+        <div class="item">
+            <iframe src="https://drive.google.com/file/d/10lLBu3XbaT4l-2SaUE3MC8tdD-gbGE2X/preview" width="640" height="480" allow="autoplay"></iframe>
+            <a href="https://drive.google.com/file/d/10lLBu3XbaT4l-2SaUE3MC8tdD-gbGE2X/preview" download class="download-link">Download Video</a>
+        </div>
     </div>
 </section>
 
@@ -73,21 +129,9 @@
 <section id="blog">
     <h2>Blog</h2>
     <div class="blog-post">
-        <h3>First Blog Post</h3>
-        <p>This is your first post. Share your thoughts here!</p>
+        <h3>Walking Away Without Regret</h3>
+        <p>I’ve made my choice to leave, not because I’m running away from something, but because I’m moving toward something new. There’s no need for apologies or explanations — it's my decision, and it’s final. The past will stay in the past, and I have no plans to revisit it. This is not about turning my back; it’s about taking control of my future and walking towards something that feels right for me. What happens next is mine to decide.</p>
     </div>
-</section>
-
-<!-- About Section -->
-<section id="about">
-    <h2>About Me</h2>
-    <p>A wanderer with a story to tell. Exploring life, one code at a time.</p>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Find me on social media.</p>
 </section>
 
 </body>
